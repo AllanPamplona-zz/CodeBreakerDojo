@@ -51,7 +51,7 @@ module.exports = {
       cb({type:0, message:"Number with digits repeated"})
       return"Number with digits repeated"
     }
-    for (i = 0;i<secretNumberLength;i++) {
+    for (var i = 0;i<secretNumberLength;i++) {
       for (var j = 0;j<num.length;j++) {
         if(num[j]==secretNumber[i]){
           if(i==j){
